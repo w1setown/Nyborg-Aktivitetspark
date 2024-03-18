@@ -1,6 +1,6 @@
 # Nyborg-Aktivitetspark
 
-## Update: 0.0.3:
+## Update 0.0.3:
 
 ### Base Structure:
 - Implemented the basic structure of the webpage, including navigation links and content sections.
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <br>
 <br>
 
-## Update: 0.0.2
+## Update 0.0.2
 
 ### Inspiration from "Omerko" Tutorial:
 #### Base Code Implementation:
