@@ -1,6 +1,16 @@
 # Nyborg-Aktivitetspark
 
+## Update 0.0.4.1:
+> Added 19. March - 
+
+## Testing
+- There has been done testing on adding a better user-interface for
+  smartphone-view
+- The code for the webpage's frame has been added to WORK-IN-PROGRESS.md
+>Read more there
+
 ## Update 0.0.4:
+> Added 19. March - 10:51
 
 ### Base Structure:
 - Added frame images to enhance visual appeal (commented out for later addition).
@@ -25,6 +35,7 @@
 
 
 ## Update 0.0.3:
+> Added 18. March - 12:41
 
 ### Base Structure:
 - Implemented the basic structure of the webpage, including navigation links and content sections.
@@ -94,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <br>
 
 ## Update 0.0.2
+> Added 12. March - 13:11
 
 ### Inspiration from "Omerko" Tutorial:
 #### Base Code Implementation:
