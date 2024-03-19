@@ -25,38 +25,39 @@
   > For this a JavaScript has been written:
 ```js
 document.addEventListener("DOMContentLoaded", function() {
-    // Get all sections
-    const sections = document.querySelectorAll(".section");
-  
-    // Get buttons
-    const goRightBtn = document.getElementById("goRight");
-    const goLeftBtn = document.getElementById("goLeft");
-  
-    // Current section index
-    let currentIndex = 0;
-  
-    // Function to scroll to the next section
-    function goToNextSection() {
-      if (currentIndex < sections.length - 1) {
-        currentIndex++;
-        sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
-      }
+  // Få fat i alle sektioner
+  const sections = document.querySelectorAll(".section");
+
+  // Få fat i knapperne
+  const goRightBtn = document.getElementById("goRight");
+  const goLeftBtn = document.getElementById("goLeft");
+
+  // Aktuelt sektionsindeks
+  let currentIndex = 0;
+
+  // Funktion til at rulle til næste sektion
+  function gåTilNæsteSektion() {
+    if (currentIndex < sections.length - 1) {
+      currentIndex++;
+      sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
     }
-  
-    // Function to scroll to the previous section
-    function goToPreviousSection() {
-      if (currentIndex > 0) {
-        currentIndex--;
-        sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
-      }
+  }
+
+  // Funktion til at rulle til forrige sektion
+  function gåTilForrigeSektion() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
     }
-  
-    // Event listener for right button
-    goRightBtn.addEventListener("click", goToNextSection);
-  
-    // Event listener for left button
-    goLeftBtn.addEventListener("click", goToPreviousSection);
-  });
+  }
+
+  // Eventlytter for højre knap
+  goRightBtn.addEventListener("click", gåTilNæsteSektion);
+
+  // Eventlytter for venstre knap
+  goLeftBtn.addEventListener("click", gåTilForrigeSektion);
+});
+
   ```
 
 ### "Going forward"
