@@ -1,170 +1,172 @@
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    overflow-y: hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-  .nav-container {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0; /* Ensure the menu starts from the left edge of the viewport */
-    z-index: 100;
-    background-color: #333;
-    overflow-x: auto; /* Allow horizontal scrolling for the menu */
-    text-align: center;
-  }
-  
-  .main-nav ul {
-    white-space: nowrap; /* Prevent wrapping of menu items */
-  }
-  
-  .main-nav li {
-    display: inline-block; /* Display menu items inline */
-  }
-  
-  .main-nav li a {
-    display: block;
-    color: white;
-    background-color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .main-nav li a:hover {
-    background-color: #111;
-  }
-  
+.nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; /* Ensure the menu starts from the left edge of the viewport */
+  z-index: 100;
+  background-color: #333;
+  overflow-x: auto; /* Allow horizontal scrolling for the menu */
+  text-align: center;
+}
+
+.main-nav ul {
+  white-space: nowrap; /* Prevent wrapping of menu items */
+}
+
+.main-nav li {
+  display: inline-block; /* Display menu items inline */
+}
+
+.main-nav li a {
+  display: block;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.main-nav li a:hover {
+  background-color: #111;
+}
+
 
 /* Dropdown styles */
 .dropdown:hover .dropdown-content {
-  display: block;
+display: block;
 }
 
 .dropdown-content {
-  display: none;
-  position: fixed; /* Change from absolute to fixed */
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
+display: none;
+position: fixed;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+z-index: 1;
 }
 
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+background-color: #f1f1f1;
 }
 
 
-/* Adjust button styles as needed */
+
 .button-container button {
-  background-color: #3333332d;
-  color: white;
-  border: none;
-  padding: 1vh 4vw; /* Keep consistent padding */
-  cursor: pointer;
-  width: 9vh; /* Set the same width for both buttons */
-  border-radius: 50vh;
+background-color: #3333332d;
+color: white;
+border: none;
+padding: 1vh 4vw; /* Keep consistent padding */
+cursor: pointer;
+width: 9vh; /* Set the same width for both buttons */
+border-radius: 50vh;
 }
 
 .button-container button:hover {
-  background-color: #111;
+background-color: #111;
 }
+
 
 
 /* Button Container */
+
 .button-container {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%, -50%);
-  z-index: 101; /* Ensure buttons are above other content */
+position: fixed;
+top: 50%;
+transform: translateY(-50%, -50%);
+z-index: 101; /* Ensure buttons are above other content */
 }
 
-/* Style for Go Right button */
-#goRight {
-  position: absolute;
-  right: -99.5vw; /* Adjust as needed */
+
+#goRight { /* Style for Go Right button */
+position: absolute;
+right: -99.5vw; 
 
 }
 
-/* Style for Go Left button */
-#goLeft {
-  position: absolute;
-  left: .4vw; /* Adjust as needed */
+#goLeft { /* Style for Go Left button */
+position: absolute;
+left: .4vw;
 }
 
-/* Adjust button styles as needed */
 .button-container button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 1vw 1vh;
-  cursor: pointer;
+background-color: #333;
+color: white;
+border: none;
+padding: 1vw 1vh;
+cursor: pointer;
 }
 
 .button-container button:hover {
-  background-color: #111;
+background-color: #111;
 }
 
-  
-  /* Container */
-  .container {
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  /* Content Wrapper */
-  .content-wrapper {
-    width: 100vw;
-    white-space: nowrap;
-  }
-  
-  /* Sektioner */
-  .section {
-    width: 100vw;
-    height: 100vh;
-    display: inline-block;
-    position: relative;
-  }
 
-    /* Tekst */
-  .headline {
-    font-size: 85px;
-  }
+/* Container */
+.container {
+  width: 100vw;
+  height: 100vh;
+}
 
-  .paragraph {
-    font-size: medium;
-  }
+/* Content Wrapper */
+.content-wrapper {
+  width: 100vw;
+  white-space: nowrap;
+}
+
+/* Sektioner */
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+  /* Tekst */
+.headline {
+  font-size: 85px;
+}
+
+.paragraph {
+  font-size: medium;
+}
 
 
-  /* Headingers */
-  .section div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+/* Heading */
+.section div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Baggrund eller individuelle */
+.section-one {
+  background-color: #e67e22;
+}
+.section-two {
+  background-color: #e74c3c;
+}
+.section-three {
+  background-color: #2c3e50;
   }
-  
-  /* Baggrund */
-  .section-one {
-    background-color: #e67e22;
-  }
-  .section-two {
-    background-color: #e74c3c;
-  }
-  .section-three {
-    background-color: #2c3e50;
-    }
-  
