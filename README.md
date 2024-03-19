@@ -1,6 +1,7 @@
 # Nyborg-Aktivitetspark
 
 ## Update 0.0.4:
+> Added 19. March - 10:51
 
 ### Base Structure:
 - Added frame images to enhance visual appeal (commented out for later addition).
@@ -25,6 +26,7 @@
 
 
 ## Update 0.0.3:
+> Added 18. March - 12:41
 
 ### Base Structure:
 - Implemented the basic structure of the webpage, including navigation links and content sections.
@@ -94,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <br>
 
 ## Update 0.0.2
+> Added 12. March - 13:11
 
 ### Inspiration from "Omerko" Tutorial:
 #### Base Code Implementation:
