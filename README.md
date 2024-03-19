@@ -1,7 +1,7 @@
 # Nyborg-Aktivitetspark
 
 ## Update 0.0.4.1:
-> Added 19. March - 
+> Added 19. March - 14.37
 
 ## Testing
 - There has been done testing on adding a better user-interface for
