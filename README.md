@@ -1,9 +1,23 @@
 # Nyborg-Aktivitetspark
 
+## Update 0.0.5:
+> Added 20. March - 09:11
+
+### Frame
+- The initial version of the frame has been added. (Has to be reworked so it will work with smartphone-view.)
+
+### Backgrounds
+- I have added backgrounds, so it will be easier to see the direction of the webpage's layout
+
+### Bug fixes
+- A bug occured that made the button and the arrowkeys not work as intended. This has now been fixed.
+> Reason: duplication in the code made it unreadable for JavaScript.
+
+
 ## Update 0.0.4.1:
 > Added 19. March - 14.37
 
-## Testing
+### Testing
 - There has been done testing on adding a better user-interface for
   smartphone-view
 - The code for the webpage's frame has been added to WORK-IN-PROGRESS.md
