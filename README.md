@@ -2,6 +2,19 @@
 
 <br>
 
+## 0.0.5.1a
+> Added 20. March - 11.
+
+### Text
+- Text is being added and layout for it is being adjusted (.section-one .headline and .section-one .paragraph)
+- The goal is to have the the text load once the corelating section has been selected (using the navigation buttons or arrowkeys)
+
+
+<br>
+<br>
+<br>
+
+
 ## Update 0.0.5:
 > Added 20. March - 09:11
 
@@ -24,7 +37,7 @@
 
 
 ## Update 0.0.4.1:
-> Added 19. March - 14.37
+> Added 19. March - 14:37
 
 ### Testing
 - There has been done testing on adding a better user-interface for

@@ -153,13 +153,47 @@ background-color: #111;
 }
 
   /* Tekst */
-.headline {
-  font-size: 85px;
+.headline{
+  font-size: 5vh;
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.281);
 }
+
+.section-one .headline {
+  position: absolute;
+  top: 20vh;
+  left: center;
+  transform: translate(-50%, -50%);
+}
+
+section-one .paragraph{
+  position: absolute;
+  top: 30vh;
+  left: center;
+  transform: translate(-50%, -50%);
+
+}
+
+.section-two .headline {
+  position: absolute;
+  top: 20vh;
+  left: center;
+  transform: translate(-50%, -50%);
+}
+
+.section-three .headline {
+  position: absolute;
+  top: 20vh;
+  left: center;
+  transform: translate(-50%, -50%);
+}
+
 
 .paragraph {
   font-size: medium;
+  line-height: 1.5;
 }
+
 
 
 /* Heading */
