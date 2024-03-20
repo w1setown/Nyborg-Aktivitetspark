@@ -1,9 +1,19 @@
 # Nyborg-Aktivitetspark
 
 
+## Update 0.0.5.2
+> Added 20. March - 15.28
+
+### "Nothing to see here"
+-Rework is in effect
+
+<br>
+<br>
+<br>
+
 
 ## Update 0.0.5.1b
-> Added 20. March - 14: 
+> Added 20. March - 14:07 
 
 ### Text
 - Text has been adjusted. However only by using breaking element in html. 
