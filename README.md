@@ -1,9 +1,22 @@
 # Nyborg-Aktivitetspark
 
+
+
+## Update 0.0.5.1b
+> Added 20. March - 14: 
+
+### Text
+- Text has been adjusted. However only by using breaking element in html. 
+- Webpage will be remade using grid- and flexboxes to enhance the webpage. 
+
+
+<br>
+<br>
 <br>
 
-## 0.0.5.1a
-> Added 20. March - 11.
+
+## Update 0.0.5.1a
+> Added 20. March - 11:14
 
 ### Text
 - Text is being added and layout for it is being adjusted (.section-one .headline and .section-one .paragraph)

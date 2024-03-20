@@ -166,12 +166,9 @@ background-color: #111;
   transform: translate(-50%, -50%);
 }
 
-section-one .paragraph{
-  position: absolute;
-  top: 30vh;
-  left: center;
-  transform: translate(-50%, -50%);
-
+.section-one .paragraph {
+  font-size: medium;
+  line-height: 1.5;
 }
 
 .section-two .headline {
@@ -191,8 +188,24 @@ section-one .paragraph{
 
 .paragraph {
   font-size: medium;
-  line-height: 1.5;
+  left: 50%;
+  inline-size: 90vh;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
+
+.paragraph-container {
+  position: relative;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85vh; /* Adjust the width as needed */
+  height: 45vh;
+  margin: 0 auto; /* Center the container */
+  padding: 2vh; /* Add some padding for spacing */
+  background-color: rgba(172, 170, 170, 0.548); /* Background color with transparency */
+}
+
 
 
 
