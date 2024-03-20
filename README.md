@@ -14,6 +14,13 @@
 > Reason: duplication in the code made it unreadable for JavaScript.
 
 
+
+<br>
+<br>
+<br>
+
+
+
 ## Update 0.0.4.1:
 > Added 19. March - 14.37
 
@@ -22,6 +29,12 @@
   smartphone-view
 - The code for the webpage's frame has been added to WORK-IN-PROGRESS.md
 >Read more there
+
+
+<br>
+<br>
+<br>
+
 
 ## Update 0.0.4:
 > Added 19. March - 10:51
