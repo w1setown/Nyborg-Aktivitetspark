@@ -2,7 +2,7 @@
 
 
 ## Update 0.1.0.0:
-Added 21. March - 14:51
+> Added 21. March - 14:51
 
 ### Rework
 - The entire design has been changed, to make more stylish and minimalistic.  The goal for this is to make the page more readable for users.
