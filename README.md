@@ -1,18 +1,29 @@
 # Nyborg-Aktivitetspark
 
 
-## Update 0.0.5.2
+## Update 0.1.0.0:
+Added 21. March - 14:51
+
+### Rework
+- The entire design has been changed, to make more stylish and minimalistic.  The goal for this is to make the page more readable for users.
+- Menu has been moved to the left (will probably be using a hamburger-menu in the future)
+
+<br>
+<br>
+<br>
+
+## Update 0.0.5.2:
 > Added 20. March - 15.28
 
 ### "Nothing to see here"
--Rework is in effect
+- Rework is in effect
 
 <br>
 <br>
 <br>
 
 
-## Update 0.0.5.1b
+## Update 0.0.5.1b:
 > Added 20. March - 14:07 
 
 ### Text
@@ -25,7 +36,7 @@
 <br>
 
 
-## Update 0.0.5.1a
+## Update 0.0.5.1a:
 > Added 20. March - 11:14
 
 ### Text
