@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+
+.outer-wrapper {
+    width: 300vw; /* 3 sections, each of 100vw */
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row; /* Change direction to row */
+}
+
+.wrapper {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+}
+
+.content {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
+    position: relative; /* Set position to relative */
+}
+
+.title, .text, .photo {
+    position: absolute; /* Set position to absolute */
+}
+
+.title {
+    font-size: 3vw;
+    font-weight: bold;
+    top: 19vh; /* Position from the top */
+    left: 15vw; /* Position from the left */
+}
+
+.text {
+    max-width: 25vw;
+    top: 29vh; /* Position from the top */
+    left: 15.4vw; /* Position from the left */
+    font-size: 1,5vw;   
+}
+
+.photo {
+    max-width: 50vw;
+    max-height: 50vh;
+    height: auto;
+    width: auto;
+    bottom: 31vh; /* Position from the bottom */
+    right: 10vw; /* Position from the right */
+}
+
+.content.one {
+    background-color: #e4e4e4;
+}
+
+.content.two {
+    background-color: #c0c0c0; 
+}
+
+.content.three {
+    background-color: #e4e4e4; 
+}

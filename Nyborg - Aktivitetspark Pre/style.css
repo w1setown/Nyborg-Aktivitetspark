@@ -141,23 +141,14 @@ background-color: #111;
   padding: 0;
 }
 
-/* Ramme */
-.section img {
-  position: fixed;
-  top: 50%; 
-  left: 49.96%; 
-  transform: translate(-50%, -50%);
-  z-index: 99;
-  width: 203vh;
-  height: auto;
-}
+
 
   /* Tekst */
 .headline{
   font-size: 5vh;
   color: #f1f1f1;
-  background-color: rgba(0, 0, 0, 0.281);
 }
+
 
 .section-one .headline {
   position: absolute;
@@ -188,22 +179,21 @@ background-color: #111;
 
 .paragraph {
   font-size: medium;
-  left: 50%;
   inline-size: 90vh;
-  overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 .paragraph-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
   position: relative;
   top: 20vh;
-  left: 50%;
   transform: translateX(-50%);
-  width: 85vh; /* Adjust the width as needed */
+  width: 50vh; /* Adjust the width as needed */
   height: 45vh;
   margin: 0 auto; /* Center the container */
   padding: 2vh; /* Add some padding for spacing */
-  background-color: rgba(172, 170, 170, 0.548); /* Background color with transparency */
 }
 
 
@@ -219,20 +209,20 @@ background-color: #111;
 
 /* Baggrund eller individuelle */
 .section-one {
-  background-image: url('/assets/images/nyborg-by.webp');
+  background-color: #c8e79f;
   background-size: cover;
   background-position: center;
 }
 
 
 .section-two {
-  background-image: url('/assets/images/Nyborgs-hyggeligste-gade.webp');
+  background-color: #88e5fc;
   background-size: cover;
   background-position: center;
 }
 
 .section-three {
-  background-image: url('/assets/images/nyborg-strand.webp');
+  background-color: rgb(252, 154, 252);
   background-size: cover;
   background-position: center;
 }
