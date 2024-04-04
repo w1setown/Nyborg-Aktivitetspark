@@ -1,10 +1,105 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: hidden; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Disable vertical scrolling */
 }
 
+nav {
+    background-color: #fdfafa;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: difference;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    float: none;
+}
+
+nav li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    font-weight: 200vw;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #a19a9a;
+}
+
+.button-container button {
+    background-color: #3333332d;
+    color: white;
+    border: none;
+    padding: 1vh 4vw; /* Keep consistent padding */
+    cursor: pointer;
+    width: 9vh; /* Set the same width for both buttons */
+    border-radius: 50vh;
+    }
+    
+    .button-container button:hover {
+    background-color: #111;
+    }
+    
+    
+    
+    /* Button Container */
+    
+    .button-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%, -50%);
+    z-index: 101; /* Ensure buttons are above other content */
+    }
+    
+    
+    #goRight { /* Style for Go Right button */
+    cursor: url("/assets/images/right.png"), auto;
+    position: absolute;
+    right: -99.5vw; 
+    top: -51vh;
+    height: 120vh;
+    background-color: transparent;
+    }
+    
+    #goLeft { /* Style for Go Left button */
+    cursor: url("/assets/images/left.png"), auto;
+    position: absolute;
+    left: .4vw;
+    top: -51vh;
+    height: 120vh;
+    background-color: transparent;
+    }
+    
+    .button-container button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1vw 1vh;
+    cursor: pointer;
+    }
+    
+    
+    /* Container */
+    .container {
+      width: 100vw;
+      height: 100vh;
+    }
 
 .outer-wrapper {
     width: 300vw; /* 3 sections, each of 100vw */
@@ -63,4 +158,13 @@ body {
 
 .content.three {
     background-color: #e4e4e4; 
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.fade-in.visible {
+    opacity: 1;
 }
