@@ -1,4 +1,5 @@
 body {
+    font-family: poppins;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Enable horizontal scrolling */
@@ -6,7 +7,7 @@ body {
 }
 
 nav {
-    background-color: #fdfafa;
+    background: white;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -17,20 +18,19 @@ nav {
     mix-blend-mode: difference;
 }
 
-nav ul {
+.main-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav li {
+.main-nav li {
     float: none;
 }
 
-nav li a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
-    font-weight: 200vw;
+.main-nav li a {
+    font-weight: bold;
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -38,9 +38,36 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
+.main-nav li a:hover {
     background-color: #a19a9a;
 }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #313030;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    mix-blend-mode: normal;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
 
 .button-container button {
     background-color: #3333332d;
@@ -52,15 +79,15 @@ nav li a:hover {
     border-radius: 50vh;
     }
     
-    .button-container button:hover {
+.button-container button:hover {
     background-color: #111;
-    }
+}
     
     
     
     /* Button Container */
     
-    .button-container {
+.button-container {
     position: fixed;
     top: 50%;
     transform: translateY(-50%, -50%);
@@ -68,7 +95,7 @@ nav li a:hover {
     }
     
     
-    #goRight { /* Style for Go Right button */
+#goRight { /* Style for Go Right button */
     cursor: url("/assets/images/right.png"), auto;
     position: absolute;
     right: -99.5vw; 
@@ -77,29 +104,29 @@ nav li a:hover {
     background-color: transparent;
     }
     
-    #goLeft { /* Style for Go Left button */
+#goLeft { /* Style for Go Left button */
     cursor: url("/assets/images/left.png"), auto;
     position: absolute;
     left: .4vw;
     top: -51vh;
     height: 120vh;
     background-color: transparent;
-    }
+}
     
-    .button-container button {
+.button-container button {
     background-color: #333;
     color: white;
     border: none;
     padding: 1vw 1vh;
     cursor: pointer;
-    }
+}
     
     
     /* Container */
-    .container {
-      width: 100vw;
-      height: 100vh;
-    }
+.container {
+    width: 100vw;
+    height: 100vh;
+}
 
 .outer-wrapper {
     width: 300vw; /* 3 sections, each of 100vw */
@@ -121,6 +148,7 @@ nav li a:hover {
     position: relative; /* Set position to relative */
 }
 
+
 .title, .text, .photo {
     position: absolute; /* Set position to absolute */
 }
@@ -128,14 +156,15 @@ nav li a:hover {
 .title {
     font-size: 3vw;
     font-weight: bold;
-    top: 19vh; /* Position from the top */
-    left: 15vw; /* Position from the left */
+    top: 13vh; /* Position from the top */
+    left: 13vw; /* Position from the left */
 }
 
 .text {
-    max-width: 25vw;
-    top: 29vh; /* Position from the top */
-    left: 15.4vw; /* Position from the left */
+    font-size: .85vw;
+    max-width: 35vw;
+    top: 24.2vh; /* Position from the top */
+    left: 55vw; /* Position from the left */
     font-size: 1,5vw;   
 }
 
@@ -144,27 +173,22 @@ nav li a:hover {
     max-height: 50vh;
     height: auto;
     width: auto;
-    bottom: 31vh; /* Position from the bottom */
-    right: 10vw; /* Position from the right */
+    top: 25vh; /* Position from the bottom */
+    left: 13vw; /* Position from the right */
+    object-fit: scale-down;
 }
 
 .content.one {
-    background-color: #e4e4e4;
+    background-color: black; 
+    color: white;
 }
 
 .content.two {
-    background-color: #c0c0c0; 
+    background-color: white; 
+    color: black;
 }
 
 .content.three {
-    background-color: #e4e4e4; 
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 2s;
-}
-
-.fade-in.visible {
-    opacity: 1;
+    background-color: black; 
+    color: white; 
 }

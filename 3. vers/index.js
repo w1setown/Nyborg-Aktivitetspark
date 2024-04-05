@@ -54,15 +54,3 @@ window.addEventListener("keydown", function(event) {
 goLeftBtn.style.display = 'none';
 });
 
-
-window.addEventListener('scroll', function() {
-  var elements = document.querySelectorAll('.fade-in');
-  elements.forEach(function(element) {
-      var position = element.getBoundingClientRect();
-      if(position.top >= 0 && position.bottom <= window.innerHeight) {
-          element.classList.add('visible');
-      } else {
-          element.classList.remove('visible');
-      }
-  });
-});
