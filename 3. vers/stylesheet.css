@@ -11,11 +11,14 @@ nav {
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    height: 100vh;
+    width: 60px; /* Initial minimized width */
     z-index: 100;
     display: flex;
-    justify-content: center;
-    mix-blend-mode: difference;
+    flex-direction: column;
+    justify-content: start;
+    transition: width 0.3s ease; /* Smooth width transition */
 }
 
 .main-nav ul {
@@ -23,10 +26,12 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    gap: 10px; /* Gap between list items */
 }
 
 .main-nav li {
-    float: none;
+    width: 100%; /* Full width for list items */
 }
 
 .main-nav li a {
@@ -34,38 +39,48 @@ nav {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 0; /* Vertical padding only */
     text-decoration: none;
+    transition: padding-left 0.3s ease; /* Smooth padding transition */
 }
 
-.main-nav li a:hover {
-    background-color: #a19a9a;
+.main-nav li:hover a {
+    padding-left: 20px; /* Increase padding on hover */
 }
 
+
+/* Initially hide dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #313030;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-    mix-blend-mode: normal;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+}
+
+/* Expand navigation on hover */
+nav:hover {
+    width: 200px; /* Expanded width on hover */
+}
+
+/* Additional styles for minimized sidebar */
+.nav-container {
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Expand container to accommodate expanded navigation */
+nav:hover + .container {
+    margin-left: 200px; /* Adjust margin for expanded navigation */
 }
 
 
