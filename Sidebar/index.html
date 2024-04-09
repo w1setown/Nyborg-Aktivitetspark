@@ -1,67 +1,122 @@
 <!DOCTYPE html>
-<html lang="da">
+<!-- Sidebar created by CodingLab | www.youtube.com/CodingLabYT -->
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyborg Aktivitetspark</title>
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-    <div class="sidebar">
-        <div class="top">
-            <div class="logo">
-                <i class="bx bx-math"></i>
-                <span></span>Tal og Aktivitetspark</span>
-            </div>
-        </div>
-        <i class="bx bx-menu" id="btn"></i>
-        <div class="user"></div>
-        <ul></ul>
+<div class="sidebar close">
+    <div class="logo-details">
+        <i class='bx bx-heart'></i>
+        <span class="logo_name">Nyborg Tal & Aktivitetspark</span>
     </div>
-    <ul>
+    <ul class="nav-links">
         <li>
-            <a href="#">
-                <i class='bx bx-shape-polygon'></i>
-                <span class="nav-item">Velkommen</span>
-            </a>
-            <span class="tooltip">Velkommen</span>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-info-square'></i>
+                    <span class="link_name">Om Parken</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Om Parken</a></li>
+                <li><a href="#">Velkommen</a></li>
+                <li><a href="#">Tilblivelse</a></li>
+                <li><a href="#">Videreudvikling</a></li>
+                <li><a href="#">Aktiviteter</a></li>
+                <li><a href="#">Inititiativer</a></li>
+            </ul>
         </li>
-
         <li>
-            <a href="#">
-                <i class='bx bx-shape-triangle'></i> <!-- boxicons.com -->
-                <span class="nav-item">Lær matematik</span>
-            </a>
-            <span class="tooltip">Lær matematik</span>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-shape-triangle'></i>
+                    <span class="link_name">Matematik</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Lær matematik</a></li>
+                <li><a href="#">Talsystemet</a></li>
+                <li><a href="#">Rumlig forståelse</a></li>
+                <li><a href="#">Kordinatsystem</a></li>
+                <li><a href="#">Historisk tidslinje</a></li>
+                <li><a href="#">Tallinje</a></li>
+                <li><a href="#">Regnebordet</a></li>
+                <li><a href="#">Talblindhed</a></li>
+            </ul>
         </li>
-
         <li>
-            <a href="#">
-                <i class='bx bx-dumbbell' ></i>
-                <span class="nav-item">Fysisk Træning</span>
-            </a>
-            <span class="tooltip">Fysisk Træning</span>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-dumbbell'></i>
+                    <span class="link_name">Fysisk Træning</span>
+                </a>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Fysisk træning</a></li>
+            </ul>
         </li>
-        
         <li>
-            <a href="#">
-                <i class='bx bx-shape-polygon'></i>
-                <span class="nav-item">Presse</span>
-            </a>
-            <span class="tooltip">Presse</span>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-news'></i>
+                    <span class="link_name">Nyheder</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Nyheder</a></li>
+                <li><a href="#">Presse</a></li>
+            </ul>
         </li>
-
         <li>
-            <a href="#">
-                <i class='bx bx-group'></i>
-                <span class="nav-item">Kontakt</span>
-            </a>
-            <span class="tooltip">Kontakt</span>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-phone'></i>
+                    <span class="link_name">Kontakt</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Kontakt</a></li>
+                <li><a href="#">Partnere</a></li>
+                <li><a href="#">Støt os</a></li>
+            </ul>
         </li>
     </ul>
+</div>
+
+<section class="home-section">
+    <div class="home-content">
+        <i class='bx bx-menu'></i>
+        <span class="text">Drop Down Sidebar</span>
+    </div>
+</section>
+
+<div class="one"></div>
+
+<script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+            let arrowParent = e.target.parentElement.parentElement; // selecting main parent of arrow
+            arrowParent.classList.toggle("showMenu");
+        });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    });
+</script>
+
 </body>
 </html>
