@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    background: white;
+    background: rgb(0, 0, 0);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@ nav {
 .main-nav li a {
     font-weight: bold;
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 0; /* Vertical padding only */
     text-decoration: none;
@@ -194,16 +194,13 @@ nav:hover + .container {
 }
 
 .content.one {
-    background-color: black; 
-    color: white;
+    background-color: rgb(245, 163, 197); 
 }
 
 .content.two {
     background-color: white; 
-    color: black;
 }
 
 .content.three {
-    background-color: black; 
-    color: white; 
+    background-color: white; 
 }
