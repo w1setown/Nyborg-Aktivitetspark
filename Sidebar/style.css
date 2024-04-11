@@ -224,33 +224,64 @@
   width: calc(100% - 260px);
   transition: all 0.5s ease;
 }
+
+.home-section {
+  position: relative;
+  background: repeating--gradient(
+      45deg,
+      #ffffff,
+      #ffffff 10px,
+      #dddddd 10px,
+      #dddddd 20px
+  );
+  height: 100vh;
+  overflow: auto; /* Enable scrolling if content exceeds viewport height */
+}
 .sidebar.close ~ .home-section{
   left: 78px;
   width: calc(100% - 78px);
 }
-.home-section .home-content{
+
+.home-section {
+  position: fixed;
+  top: 0;
+  left: 260px; /* Width of the sidebar */
+  width: calc(100% - 260px);
   height: 60px;
+  background: #E4E9F7;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 999; /* Ensure a high z-index to keep it above other content */
+  transition: all 0.5s ease;
 }
-.home-section .home-content .bx-menu,
-.home-section .home-content .text{
+
+.home-section .home-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-section .home-content .bx-menu {
   color: #11101d;
   font-size: 35px;
-}
-.home-section .home-content .bx-menu{
-  margin: 0 15px;
   cursor: pointer;
 }
-.home-section .home-content .text{
+
+.home-section .home-content .text {
   font-size: 26px;
   font-weight: 600;
+  color: #11101d;
 }
-@media (max-width: 420px) {
-  .sidebar.close .nav-links li .sub-menu{
-    display: none;
+
+@media (max-width: 992px) {
+  .home-section {
+    left: 78px; /* Adjust for closed sidebar */
+    width: calc(100% - 78px);
   }
 }
+
 .page {
   position: relative;
   top:1vh;
@@ -260,4 +291,50 @@
   height: 100vh;
   display: flex;
   flex-direction: column; 
+}
+
+.page-title {
+  position: absolute;
+  top: 12vh;
+  left: 6vw;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.page-content {
+  position: absolute;
+  top: 20vh;
+  left: 65vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 30vw;
+}
+
+.image {
+  position: absolute;
+  top: 20vh;
+  left: 6vw;
+}
+
+.image img {
+  object-fit: scale-down;
+  width: auto;
+  height: auto;
+  max-width: 70vw; /* Increase this if the image is too small */
+  max-height: 70vh; /* Increase this if the image is too small */
+}
+
+@media (max-width: 600px) {
+  .page-content {
+    left: 5%; /* Adjust as needed */
+    width: 90%; /* Adjust as needed */
+  }
+
+  .image {
+    top: -52vh; /* Adjust as needed */
+    left: -2.5vw; /* Adjust as needed */
+  }
 }
