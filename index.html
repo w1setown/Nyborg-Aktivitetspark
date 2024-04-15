@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- Sidebar created by CodingLab | www.youtube.com/CodingLabYT -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Custom styles for fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: Slide in from bottom */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="sidebar close">
+    <div class="logo-details">
+        <i class='bx bx-heart'></i>
+        <span class="logo_name"></span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-info-square'></i>
+                    <span class="link_name">Om Parken</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Om Parken</a></li>
+                <li><a href="#">Velkommen</a></li>
+                <li><a href="#">Tilblivelse</a></li>
+                <li><a href="#">Videreudvikling</a></li>
+                <li><a href="#">Aktiviteter</a></li>
+                <li><a href="#">Inititiativer</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-shape-triangle'></i>
+                    <span class="link_name">Matematik</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Lær matematik</a></li>
+                <li><a href="#">Talsystemet</a></li>
+                <li><a href="#">Rumlig forståelse</a></li>
+                <li><a href="#">Kordinatsystem</a></li>
+                <li><a href="#">Historisk tidslinje</a></li>
+                <li><a href="#">Tallinje</a></li>
+                <li><a href="#">Regnebordet</a></li>
+                <li><a href="#">Talblindhed</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-dumbbell'></i>
+                    <span class="link_name">Fysisk Træning</span>
+                </a>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Fysisk træning</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-news'></i>
+                    <span class="link_name">Nyheder</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Nyheder</a></li>
+                <li><a href="#">Presse</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-phone'></i>
+                    <span class="link_name">Kontakt</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Kontakt</a></li>
+                <li><a href="#">Partnere</a></li>
+                <li><a href="#">Støt os</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<section class="home-section">
+    <div class="home-content">
+        <i class='bx bx-menu'></i>
+        <span class="text">Nyborg Tal & Aktivitetspark</span>
+    </div>
+</section>
+    <!-- Content Section with Fade-in Effect -->
+    <div class="page fade-in">
+        <div class="page-title">Velkommen</div>
+        <div class="page-content">
+            Vi er glade for at kunne byde velkommen til træning, samvær og læring i Nyborg Tal- og Aktivitetspark.
+            <br><br>Området er placeret centralt i Nyborg by og er åbent for alle interesserede borgere, foreninger, skoler mv.
+            Tal- og aktivitetsparken er både indrettet til fysisk træning og til indlæring af matematik.
+            <br><br>Det er meningen af folk med talblindhed/ matematikvanskeligheder skal få gode muligheder
+            for læring med brug af hele kroppen.
+        </div>
+        <div class="image">
+            <img src="/assets/images/nyborg-by.webp" alt="Description of the image">
+        </div>
+    </div>
+
+    <!-- Another Content Section with Fade-in Effect -->
+    <div class="page fade-in">
+        <div class="page-title">Undervisning i Parken</div>
+        <div class="page-content">
+            Tal- og aktivitetsparken er udformet, så fysisk aktivitet og læring går hånd i hånd. Det er bygget til matematikundervisning
+            og især talblinde har stor gavn af parken, som er udviklet til at få matematikken helt ind under huden.
+            <br><br>Skoler er meget velkomne til at benytte Tal- og aktivitetsparken i forbindelse med undervisningsforløb i matematik.
+            Det er muligt at låne en 'læringsvogn' med målebånd, reb, spilbrikker mv. til brug i et undervisningsforløb.
+            Hvis I ønsker at låne dette udstyr, kan kontoret på HF & VUC FYN Nyborg kontaktes på tlf. 62 65 66 60. Det er gratis.
+            Der vil desuden blive afholdt inspirationskurser for lærere.
+        </div>
+        <div class="image">
+            <img src="/assets/images/nyborg-strand.png" alt="Description of the image">
+        </div>
+    </div>
+
+
+<div class="page fade-in">
+    <div class="page-title">FYSISK TRÆNING, LEG OG SPIL</div>
+    <div class="page-content">Aktivitetsparken giver mulighed for at træne i alle former for sværhedsgrad.
+        Der er crossfit-elementer. Crossfit er en motionsform som træner både udholdenhed, balance, din smidighed og koordination samt din præcision og bevægelighed.
+        
+        Desuden er der parkour-elementer samt en dobbelt løbebane til spurtdistancer. På banen indsættes der start/stop timer, om gør det muligt at konkurrere indbyrdes på hastighed. Der er også boksebolde og små trampoliner.
+        
+        Endelig er der et boldbur, som kan anvendes til forskellige boldspil.</div>
+        <div class="image">
+            <img src="/assets/images/nyborg-slot.png" alt="Description of the image">
+        </div>
+</div>
+<script type="module" src="sidebar-script.js"></script>
+<script>
+    const observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.3, // Trigger when 30% of the element is visible
+        rootMargin: '0px' // No additional margin around the viewport
+    });
+    
+    const sectionsToAnimate = document.querySelectorAll('.fade-in');
+    
+    sectionsToAnimate.forEach(section => {
+        observer.observe(section);
+    });
+    
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target); // Stop observing once animation is applied
+            }
+        });
+    }
+    
+</script>
+
+
+</body>
+</html>
